@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} | SignIn Page {% endblock title %}
+
+<!-- header -->
+{% block header %} {% include 'header.html' %} {% endblock header %}
+<!-- header done -->
+
+<!-- Carousel -->
+
+{% block carousel %} {% endblock carousel %}
+  
+
+
+{% block content %} 
+<!--MAIN CONTENT -->
+      <div class="container mb-5">
+        <h1 class="cap">User signin</h1>
+    <div class="row justify-content-center justify-content-md-around justify-content-lg-center text-center gy-5 text-warning pt-5 pb-5">
+        <div class="col-10 col-sm-10 col-md-8 col-lg-5 col-xl-5">
+          <div class="profile-form px-lg-3">
+            <form action="{% url 'signin' %}" method="POST">
+            {% csrf_token %}
+              <div class="mb-2">
+                <div id="textHelp" class="form-text text-capitalize mt-3 form-text">
+                  <small>to fast track your transaction, kindly signin or signup.</small>
+                  </div>
+                  <label for="exampleInputText1" class="form-label">Username</label>
+                  <input type="text" name="username" class="form-control" id="exampleInputText1">
+              </div>
+              <div class="mb-2">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                <div id="textHelp" class="form-text text-capitalize mt-3 form-text">
+                 <small>signin to your account or signup to create one.</small>
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-success mt-4">Sign-in</button>
+            </form>
+            <a href="{% url 'signup' %}" type="submit" class="btn btn-danger mt-4">Sign-up</a>
+          </div>
+        </div>
+         <div class="col-10 col-sm-10 col-md-2 col-lg-3 col-xl-3 d-none d-lg-block">
+          <div class="card border-0">
+            <img src="/img/GOOD0000000000.jpg" class="card-img-top rounded-circle mx-auto w-70 imge">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN CONTENT DONE -->
+{% endblock content %}
+
+
+<!-- footer -->
+
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+<!-- footer done -->
+    
+    
+    

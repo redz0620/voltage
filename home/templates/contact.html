@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %} {% include 'header.html' %}  {% endblock header %}
+
+{% block carousel %} {% include 'carousel.html' %} {% endblock carousel %}    
+
+
+{% block content %}
+<!-- contact -->
+<div id="contact">
+  <div class="container-fluid text-center text-success contact">
+    <h1 class="contat">CONTACT US</h1>
+    <div class="row justify-content-center gy-5">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 contat-p order-1">
+        <p>Address: <span>2B, Yinusa Adeniji Street,</span></p>
+        <p>Ikeja, Lagos.</p>
+        <p>Phone: <span>090123456789</span></p>  
+        <p>Email: <span>admin@teamvoltage.com</span></p>
+        <p>website: <span>www.teamvoltage.com</span></p>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-0">
+        <div class="fo">
+          <form action="{% url 'contact' %}" method="POST"> 
+            {% csrf_token %}
+            <div>
+              <label for="exampleInputEmail" class="form-label">Your Name</label><br>
+              <input type="text" name="full_name" class="form-control" placeholder="Your Full Name Required" id="exampleInputText1">
+           </div>
+            
+             <div>
+                <label for="">Your Email</label><br>
+                <input type="text" placeholder="Mail Required" id="mail">
+            </div>
+
+             <div>
+                <label for="gen">What can we help you with??</label><br>
+                <select name="How Can I Help" id="issue">
+                  <option--issue--></option>
+                  <option value="problems">Having problems logging in?<br>
+                  <option value="password">Forgot password? <br>
+                  <option value="team">Contact the help team
+                  <option value="log-in">Still unable to log-in?</option>
+               </select>
+            </div>
+
+            <div>
+               <textarea cols="30" rows="10" placeholder="Details......" id="detail"></textarea>
+            </div>
+            <button type="submit" class="submitbtn">Submit</button>
+         </form>
+       </div>                
+     </div>
+
+     <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 order-2">
+       <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377643.1448643036!2d-71.25046756407669!3d42.
+          31400891969002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA%2C%20USA!5e0!3m2!1sen!2sng!4v1651677859866!5m2!1sen!2sng" height="100%" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </div>
+
+       <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-light order-3">
+          Atlas 1031 Exchange has proudly served clients seeking I.R.C § 1031 counsel as Qualified Intermediaries with precision and excellence for over 18 years. 
+          We often personally meet with clients, and speak at educational events on “Tax Deferred Exchanges.”
+          Email: info@tingasa.com
+          Naples Office
+          1908 Timarron Way, Naples, FL 34109 (View map)
+          What You Get When Asking Your Question
+          Less than 12-hour response to your question.
+          Thoroughness and expertise of a Certified Exchange Specialist®
+          Plan of action summarized in an email follow up.
+       </div>
+    </div>
+ </div>
+</div>
+<!-- contact done -->
+{% endblock content %}
+    
+
+
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

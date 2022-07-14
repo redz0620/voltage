@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %} -Products  {% endblock title %}
+{% block header %} {% include 'header.html' %}  {% endblock header %}
+
+{% block carousel %} {% include 'carousel.html' %} {% endblock carousel %}    
+
+
+{% block content %}
+<div class="container">
+    <h1 class="cap">latest footwear</h1>
+    <div class="row justify-content-center justify-content-md-around justify-content-lg-center text-center gy-5 text-warning">
+        {% if product %}
+            {% for item in product %}
+                <div class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <div class="card">
+                    <img src="{{item.img.url}}" class="card-img-top img">
+                    <div class="card-body">
+                        <h5 class="card-title">Product:{{item.title}}</h5>
+                        <p class="card-text  text-truncate">Price:{{item.price}}</p>
+                        <p class="card-text  text-truncate">Description: {{item.description}}</p>
+                        <a href="{% url 'details' item.id %}" class="btn btn-warning text-white w-25">Add to Cart <span class="material-symbols-outlined">
+                            add_shopping_cart
+                            </span></a>
+                    </div>
+                    </div>
+                </div>
+            {% endfor %}     
+        {% endif %}
+    </div>
+</div>
+<div class="container mt-0 mb-5 bg-info">
+    <h1 class="cap">latest furniture</h1>
+        <div class="row justify-content-center text-success gy-5">
+            
+            {% if product %}
+            {% for item in product %}
+        <div class="col-10 col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+        <div class="card">
+            <img src="{{item.img.url}}" class="card-img-top pic" style="height: 25vh;" width="100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Product: {{item.title}}<span><i class="fa-solid fa-flag-usa"></i></span></h5>
+                <p class="card-text">Price: {{item.price}}</p>
+                <p class="card-text text-truncate">Description: {{item.description}}</p>
+                <a href="#" class="btn btn-success">Add To Cart <span class="material-symbols-outlined">
+                    add_shopping_cart
+                    </span></a>
+            </div>
+        </div>
+        </div>
+        {% endfor %} 
+    {% endif %}        
+        </div>
+    </div>
+ {% endblock content %}
+    
+
+
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+
+
+

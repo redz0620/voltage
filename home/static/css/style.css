@@ -1,0 +1,416 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Tenali+Ramakrishna&display=swap'); */
+
+
+:root{
+    --bg-color: goldenrod;
+    --text-color: crimson;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Pacifico', cursive; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'poppins', sans-serif; */
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar .navbar-toggler i{
+    color: palevioletred;
+}
+.navbar .navbar-toggler{
+    border: 2px solid pink;
+}
+.navbar .navbar-toggler:focus{
+    border: 3px solid dodgerblue;
+    box-shadow: none;
+    outline: none;
+}
+.navbar .navbar-brand{
+    color: honeydew;
+    font-weight: 800;
+}
+#navbarSupportedContent a{
+    color: antiquewhite;
+    font-weight: 700;
+    float: right;
+}
+.nav-item .dropdown-menu{
+    background: green;
+    float: right;
+}
+.nav-item .dropdown-menu .dropdown-item :hover{
+    background: green;
+    color: azure !important;
+}
+.navbar form input[type=search]{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.navbar form input[type=search]:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.btn:hover{
+    background: green;
+    cursor: pointer;
+}
+.btn{
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    border: none; 
+
+}
+.container-fluid .carousel-indicators{
+    overflow: auto;
+}
+.navbar-expand-lg{
+    background: goldenrod;
+}
+.carousel-inner .carousel-item{
+    height: 90vh;
+}
+.carousel-item img{
+    height: 90vh;
+}
+.carousel .carousel-indicators button{
+    background: gold;
+    width: 10px;
+    height: 3px;
+    border-radius: 100%;
+}
+.carousel-control-next i{
+    color: goldenrod;
+    font-size: 3rem;
+}
+.carousel-control-prev i{
+    color: goldenrod;
+    font-size: 3rem;
+}
+.carousel-item .carousel-caption h5{
+    color: darkgoldenrod;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.container .about{
+    background: url(/image/GOOD0000.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about h1{
+    padding: 1em;
+    text-decoration: underline wavy darkgoldenrod 5px;
+    text-shadow: 5px 5px 10px #00FF00;
+    text-emphasis: triangle green;
+}
+.about1{
+    /* font-family: 'Times New Roman', Times, serif; */
+    line-height: 2rem;
+}
+.about1 p{
+    font-size: 1.3rem;
+    color: black;
+}
+.about2{
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 20px 5px 10px 10px darkgoldenrod;
+}
+.aboutimg img{
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.contat{
+    color: peachpuff;
+    text-align: center;
+    padding-top: 2em;
+    padding: 1rem;
+    text-decoration: underline wavy darkgoldenrod 5px;
+    text-shadow: 5px 5px 10px #00FF00;
+    text-emphasis: triangle green;
+}
+.contat-p{
+    font-size: 2em;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    color: whitesmoke;
+    line-height: 5rem;
+}
+.contact{
+    background: url(/image/GOODCONTACT.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont p{
+    font-size: 20px;
+    color: paleturquoise;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 2em sans-serif;
+}
+.fo{
+    box-shadow: 2px 4px 2px 3px whitesmoke;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 90%;
+}
+form div label{
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+form input{
+    height: 5vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 30%;
+    outline: none;
+    border: 1px solid lightsteelblue;
+}
+textarea{
+    border: 1px solid lightsteelblue;
+    outline: none;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.submitbtn{
+    background: peru;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 3px;
+    width: 30%;
+    color: aliceblue;
+}
+.submitbtn:hover{
+    font-size: 1.6rem;
+    /* background: lightsteelblue; */
+    color: antiquewhite;
+}
+.map{
+    height: 50vh;
+}
+.team{
+    background: url(/image/IMG_2984.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teem{
+    text-decoration: underline wavy darkgoldenrod 5px;
+    text-shadow: 5px 5px 10px #00FF00;
+    text-emphasis: triangle green;
+}
+.finer{
+    align-items: center;
+    padding: 2rem;
+    /* background: url(/img/sandy\ b-g.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.float-start img{
+    width: 50%;
+}
+.float-end{
+    width: 50%;
+    padding-left: 2rem;
+    height: 50vh;
+}
+.our{
+    text-align: center;
+    font-size: 3rem;
+    color: darkorange;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: line-through;
+    padding: auto;
+}
+.content3{
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 1rem;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.box2:hover{
+    transform: translateY(-30px);
+    color: chartreuse;
+}
+.img{
+    height: 20vh;
+}
+.pic{
+    height: 40vh;
+}
+.foota a{
+    color: white;
+}
+.foota a:hover{
+    color: peachpuff;
+}
+.foota span:hover{
+    color: peachpuff;
+}
+.foota2{
+    text-align: center;
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 100;
+} 
+/* shopcart */
+.text-box input[type="number"] {
+    text-align: center;
+    color: crimson;
+    border: 3px solid gold;
+    outline: none;
+}
+.table-box tr{
+    color: darkgoldenrod;
+    text-transform: capitalize;
+    text-align: center;
+}
+.table-box button{
+    border: none;
+}
+.table-box .fas{
+    color: lawngreen;
+}
+/* shopcart done */
+/* checkout */
+.check-title{
+    text-align: center;
+    text-transform: capitalize;
+    color: crimson;
+    font-weight: 900;
+}
+/* .form-box{
+    /* color: crimson; */
+    /* } */
+    .form-box input{
+        box-shadow: none;
+    outline: none;
+    border: 1px solid crimson;
+    background: goldenrod;
+}
+.form-box input:focus{
+    box-shadow: 1px 1px 3px 2px crimson;
+    outline: none;
+    border: 1px solid crimson;
+    color: crimson;
+}
+.form-label{
+    color: crimson;
+}
+/* check-out done */
+/* callback */
+.callback a{
+    background: crimson;
+    color: white;
+    text-transform: capitalize;
+}
+.callback a:hover{
+    background: peachpuff;
+    color: crimson;
+    font-weight: 600;
+}
+/* callback done*/
+.cap{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.cap::before{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 1.1rem;
+    background: gold;
+    margin: auto;
+    border-radius: 100%;
+    transform: translateY(70px);
+}
+.cap::after{
+    content: '';
+    display: block;
+    width: 14rem;
+    height: .5rem;
+    background: goldenrod;
+    margin: auto;
+    border-radius: 100%;
+    transform: translateY(10px);
+}
+/* profile */
+.profile-box{
+    background: url(/image/GOODCONTACT.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-box input{
+    background: goldenrod;
+    color: crimson;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.profile-box input:focus{
+    background: goldenrod;
+    color: crimson;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.profile-box label{
+    color: crimson;
+    font-weight: 600;
+}
+.fa-solid{
+    color: whitesmoke;
+    align-self: center;
+}
+.fa-solid:hover{
+    color: black;
+    align-self: center;
+}
+/* profile done */
+
+/* .foota a:hover i{
+    margin-left: 10px;
+} */

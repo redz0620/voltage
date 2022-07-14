@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} |Home  {% endblock title %}
+{% block header %} {% include 'header.html' %}  {% endblock header %}
+
+{% block carousel %} {% include 'carousel.html' %} {% endblock carousel %}    
+    <!-- content -->
+{% block content %}
+  <div class="container">
+    <h1 class="cap">latests</h1>
+    <div class="row justify-content-center justify-content-md-around justify-content-lg-center text-center gy-5 text-warning">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="100">
+            <img src="{% static '' %}image/YSL.jpg" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">Donna Born In Roma Eau de Parfum</h5>
+              <p class="text-dark">A fresh, floral and fruity perfume with notes of bergamot</p>
+              <p>$108 - $138</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="100">
+            <img src="{% static '' %}image/Valentino11.jpg" class="d-block w-100 h-75" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">VALENTINA EAU DE PARFUM</h5>
+              <p class="text-dark">A fresh, floral and fruity perfume with notes of bergamot</p>
+              <p>$94.00</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="100">
+            <img src="{% static '' %}image/Perfume3.jpg" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">VOCE VIVA EAU DE PARFUM</h5>
+              <p class="text-dark">A warm, woody floral fragrance with orange blossom and bergamot.</p>
+              <p>$108.00</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <!-- <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <!-- <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+    <!-- {% if vic %}
+      {% for v in vic %}
+        <div class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+          <div class="card">
+            <img src="{{v.img.url}}" class="card-img-top img">
+            <div class="card-body">
+              <h5 class="card-title text-capitalize">Name: {{v.name}}</h5>
+              <p class="card-text">Price: {{v.price}}</p>
+              <p class="card-text ">Description: {{v.description}}</p>
+              <a href="/details.html" class="btn btn-warning text-white w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+    </div>
+  </div> -->
+
+{% endblock content %}
+  
+  <!-- main content done -->
+  
+{% block about %} {% include 'about.html' %} {% endblock about %}
+  
+{% comment %} {% block contact %} {% include 'contact.html' %} {% endblock contact %} {% endcomment %}
+  
+  
+  
+{% block team %} {% include 'team.html' %} {% endblock team %}
+  
+
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+  
+
+
+
+
+  
+  
+<!-- <div class="container">
+
+  <h1 class="cap">latest products</h1>
+  <div class="row justify-content-center text-success gy-5">
+    {% if vic %} 
+    {% for v in vic %} -->
+    <!--  -->
+    <!-- <div class="col-10 col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+      <div class="card">
+        <img src="{{v.img.url}}" class="card-img-top pic">
+          <div class="card-body">
+            <h5 class="card-title">Name: {{v.name}}</h5>
+            <p class="card-text">Price: {{v.price}}</p>
+            <p class="card-text text-truncate">Description: {{v.description}}</p>
+            <a href="#" class="btn btn-success">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+      </div>
+      </div> -->
+      <!-- main content  -->
+      
